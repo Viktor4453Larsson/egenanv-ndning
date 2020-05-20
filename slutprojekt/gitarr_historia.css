@@ -146,4 +146,39 @@ img {
     img {
         width: 75%;
     }
+    .kontainer{
+       width: 1200px; 
+       margin: 20px auto;
+       padding: 20px;
+       grid-template-areas: 
+       "meny_name"
+       "k1"
+       "k2"
+       "kontainer"
+       "innehall";
+    }
+    @media (max-width: 1200px){
+        .meny_panel .meny_namn .innehall div{
+            width: 100%;
+            grid-template-columns: auto 200px;
+        }
+    }
+
+    @media (max-width: 760px){
+        .meny_panel .meny_namn .innehall div{
+            grid-template-columns: auto;
+            grid-template-areas: 
+            "meny_name"
+            "k1"
+            "k2"
+            "kontainer"
+            "innehall";
+        }
+        
+    }
+
+    @media (max-width: 550px) {
+        h3 h1 caption 
+    } {      display: block;  
+    }
 }
