@@ -142,9 +142,18 @@ img {
     .noter {
         z-index: 3;
     }
-    
+    .darkmode{
+        background: #000;
+        color: #FFF;
+    }
     img {
         width: 75%;
+    }
+    .slider{
+        top: 0;
+        left: 0;
+        width: 90%;
+        height: 100vh;
     }
     .kontainer{
        width: 1200px; 
@@ -178,7 +187,6 @@ img {
     }
 
     @media (max-width: 550px) {
-        h3 h1 caption 
-    } {      display: block;  
+        h3 h1 caption  }
+        {display: block;  
     }
-}
