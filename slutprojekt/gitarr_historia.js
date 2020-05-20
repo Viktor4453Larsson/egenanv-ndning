@@ -9,8 +9,8 @@ function darkmode() {
     const eKnapp2 = document.querySelector("#K2");
 
     eBox.style.backgroundColor = "#001100";
-    eH1.style.color = "#444";
-    eH3.style.color = "#888";
+    eH1.style.color = "#FFFFFF";
+    eH3.style.color = "#FFFFFF";
     eKnapp1.style.color = "#222";
     eKnapp2.style.color = "#222";
 }
@@ -23,19 +23,19 @@ function lightmode() {
     const eKnapp2 = document.querySelector("#K2");
 
     eBox.style.backgroundColor = "#FFEEFF";
-    eH1.style.color = "#FFF";
-    eH3.style.color = "#BBB";
+    eH1.style.color = "#333";
+    eH3.style.color = "#444";
     eKnapp1.style.color = "#777";
     eKnapp2.style.color = "#777";
 }
 
-window.addEventListener("skrolla", function (e) {
+window.addEventListener("scroll", function (e) {
     
     eFlyttandeElement.forEach(function (element) {
         
-        var hastighet = element.dataset.hastighet;
-
-        element.style.transform = "translateXOffset(" + window.pageXOffset * rate + "px)";
-    })
-})
+        var rate = element.dataset.rate;
+    
+        element.style.transform = "translateY(" + window.pageYOffset * rate + "px)";
+    });
+});
 
