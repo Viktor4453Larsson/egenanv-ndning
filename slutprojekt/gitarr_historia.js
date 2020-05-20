@@ -1,5 +1,6 @@
 const eFlyttandeElement = document.querySelectorAll(".skrolla"); 
 
+/* En knapp för att aktivera mörkt tema på sidan */
 function darkmode() {
     const eBody = document.querySelector(".innehall");
     const eBox = document.querySelector("body");
@@ -14,6 +15,7 @@ function darkmode() {
     eKnapp1.style.color = "#222";
     eKnapp2.style.color = "#222";
 }
+/* En knapp för att aktivera ljust läge på sidan och att byta från mörkt tema till ljust tema */
 function lightmode() {
     const eBody = document.querySelector(".innehall");
     const eBox = document.querySelector("body");
@@ -28,7 +30,7 @@ function lightmode() {
     eKnapp1.style.color = "#777";
     eKnapp2.style.color = "#777";
 }
-
+/* Kod för att animera note.png bilden på sidan */
 window.addEventListener("scroll", function (e) {
     
     eFlyttandeElement.forEach(function (element) {

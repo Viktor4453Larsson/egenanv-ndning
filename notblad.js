@@ -12,8 +12,10 @@ ctx.fillStyle = "black";
 ctx.font = "30px sans-serif";
 
 /* Rita notbladet */
+/* Utkanten av notbladet */
 ctx.fillStyle = "#222222";
 ctx.strokeRect(200, 100, 700, 800);
+/* Första stycket */
 ctx.beginPath();
 ctx.moveTo(300, 100);
 ctx.lineTo(300, 900);
@@ -38,6 +40,7 @@ ctx.beginPath();
 ctx.moveTo(800, 100);
 ctx.lineTo(800, 900);
 ctx.stroke();
+/* Andra stycket */
 ctx.beginPath();
 ctx.moveTo(200, 150);
 ctx.lineTo(1000000, 100);
@@ -60,6 +63,7 @@ ctx.stroke();
 ctx.moveTo(200, 275);
 ctx.lineTo(1000000, 100);
 ctx.stroke();
+/* Tredje stycket */
 ctx.beginPath();
 ctx.moveTo(200, 350);
 ctx.lineTo(1000000, 100);
@@ -82,7 +86,7 @@ ctx.stroke();
 ctx.moveTo(200, 475);
 ctx.lineTo(1000000, 100);
 ctx.stroke();
-
+/* Fjärde stycket */
 ctx.moveTo(200, 550);
 ctx.lineTo(1000000, 100);
 ctx.stroke();
@@ -104,6 +108,7 @@ ctx.stroke();
 ctx.moveTo(200, 675);
 ctx.lineTo(1000000, 100);
 ctx.stroke();
+/* Femte och sista stycket */
 ctx.beginPath();
 ctx.moveTo(200, 750);
 ctx.lineTo(1000000, 100);
