@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap%27');
+
+body {
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    background: url("../bilder/drone1.jpg");
+    background-repeat: no-repeat;
+
+    p {
+        color: #FFF;
+    }
+
+    li {
+        color: #FFF;
+
+        a {
+            color: #FFF;
+        }
+
+        a:hover {
+            color: rgb(173, 173, 173);
+        }
+    }
+}
+
+.border {
+    border-width: 5px !important;
+}
+
+.border-top {
+    border-width: 5px !important;
+}
+
+.container {
+    z-index: 1;
+}
+
+.fet {
+    font-weight: bold;
+}
+
+.navbar {
+    padding: 1.5rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+    .navbar-brand {
+        font-size: 30px;
+    }
+
+    .nav-link {
+        font-size: 17px;
+    }
+
+    li {
+        margin-right: 4rem;
+    }
+}
+
+form {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 80px;
+    color: white;
+    border-radius: 20px;
+
+    button {
+        padding: 15px !important;
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+        font-size: 25px;
+    }
+}

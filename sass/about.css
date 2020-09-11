@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap%27");
+body {
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body p {
+  color: #FFF;
+}
+
+body li {
+  color: #FFF;
+}
+
+body li a {
+  color: #FFF;
+}
+
+body li a:hover {
+  color: #adadad;
+}
+
+.border {
+  border-width: 5px !important;
+}
+
+.border-top {
+  border-width: 5px !important;
+}
+
+.container {
+  z-index: 1;
+}
+
+.fet {
+  font-weight: bold;
+}
+
+.navbar {
+  padding: 1.5rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.navbar .navbar-brand {
+  font-size: 30px;
+}
+
+.navbar .nav-link {
+  font-size: 17px;
+}
+
+.navbar li {
+  margin-right: 4rem;
+}
+/*# sourceMappingURL=about.css.map */
