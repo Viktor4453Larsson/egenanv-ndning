@@ -1,0 +1,30 @@
+div .kontainer {
+    background-color: green;
+}
+
+.hidden {
+    display: none;
+}
+
+.left {
+    margin-left: 20em;
+}
+
+.gra_box {
+    height: 30px;
+    width: 50%;
+    background-color: #888888;
+    margin-left: 20em;
+}
+
+.ljus_gra_box {
+    height: 30px;
+    width: 50%;
+    background-color: #B8B8B8;
+    margin-left: 20em;
+}
+
+input {
+    margin-left: 25em;
+
+}

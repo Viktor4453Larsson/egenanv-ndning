@@ -9,26 +9,42 @@
 <body>
   <label for="test">EMAIL</label>
   <input id="email" type="email">
+  <label for="test">Organisations nummer</label>
+  <input id="org_n" type="text">
 
   <img class="hidden img1" src="../bilder/bergtest1.jpg" alt="">
   <img class="hidden img2" src="../bilder/bergtest2.jpg" alt="">
 
   <button onclick="isIt()">Kör</button>
+  <button onclick="OrganisationN()">Kör</button>
 
   <script>  
     //Hämta element från HTML
     const email = document.querySelector("#email");
+    const OrganisationNumber = document.querySelector("#org_n");
     const img1 = document.querySelector(".img1");
     const img2 = document.querySelector(".img2");
     const textTest = document.querySelector(".text-test");
 
     //Funktion för att se om text = SEOblabla
+    //Om man vill använda email adress för bilderna
     function isIt() {
       if(email.value == "SEO@gmail.com"){
         img1.classList.remove("hidden");
         img2.classList.add("hidden");
       } 
       if (email.value == "annatFöretag@gmail.com") {
+        img2.classList.remove("hidden");
+        img1.classList.add("hidden");
+      }
+    }
+    /* Om man vill använda organisationsnummret för bilderna*/
+    function OrganisationN() {
+      if(org_n.value == "557776-1234"){
+        img1.classList.remove("hidden");
+        img2.classList.add("hidden");
+      } 
+      if (org_n.value == "885542-7777") {
         img2.classList.remove("hidden");
         img1.classList.add("hidden");
       }

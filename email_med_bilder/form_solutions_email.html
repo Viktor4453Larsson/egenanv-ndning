@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Solutions</title>
+    <link rel="stylesheet" href="./form_solutions.css">
+</head>
+<body>
+    <div class="kontainer">
+        <div class="vit-kontainer">
+            <td style="font-size:6px; line-height:10px; padding:50px 0px 50px 0px;" valign="top" align="left">
+                <img class="max-width" border="0"
+                    style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px; max-width:100% !important; width:100%; height:auto !important;"
+                    width="1000" alt="" data-proportionally-constrained="true" data-responsive="true"
+                    src="http://cdn.mcauto-images-production.sendgrid.net/0a78cfd5943a0773/75c92d87-049e-4916-b711-2ab8747ff13f/300x52.png">
+            </td>
+            <div class="gra_box"> </div>
+            <br>
+            <div class="left" style="font-family: inherit; text-align: inherit">Namn:&nbsp;</div><br>
+            <input id="name" type="text">
+            <br>
+            <div class="ljus_gra_box"></div>
+
+            <div class="gra_box"> </div>
+            <br>
+            
+            <div class="left" style="font-family: inherit; text-align: inherit">Telefonnummer:&nbsp;</div> <br>
+            <input id="tel-nummer" type="tel">
+            <div class="ljus_gra_box"></div>
+            
+
+
+
+            <div class="gra_box"> </div>
+            <br>
+            <div class="left" style="font-family: inherit; text-align: inherit">Adress:&nbsp;</div><br>
+            <input id="adress" type="text">
+            <br>
+            <div class="ljus_gra_box"></div>
+            <div class="gra_box"> </div><br>
+            <div class="left" style="font-family: inherit; text-align: 
+          inherit">Organisationsnummer (valfritt)</div><br>
+            <input id="org_n" type="text">
+
+            <div class="ljus_gra_box"></div>
+            <div class="gra_box"> </div>
+            
+            
+            
+            
+
+            <img class="hidden img1" src="../bilder/bergtest1.jpg" alt="">
+            <img class="hidden img2" src="../bilder/bergtest2.jpg" alt="">
+
+
+            <button onclick="OrganisationN()">Kör</button>
+
+            <script>
+                //Hämta element från HTML
+                const OrganisationNumber = document.querySelector("#org_n");
+                const img1 = document.querySelector(".img1");
+                const img2 = document.querySelector(".img2");
+                const textTest = document.querySelector(".text-test");
+
+
+                function OrganisationN() {
+                    if (org_n.value == "557776-1234") {
+                        img1.classList.remove("hidden");
+                        img2.classList.add("hidden");
+                    }
+                    if (org_n.value == "885542-7777") {
+                        img2.classList.remove("hidden");
+                        img1.classList.add("hidden");
+                    }
+                }
+            </script>
+        </div>
+    </div>
+</body>
+</html>
