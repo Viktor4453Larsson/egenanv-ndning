@@ -1,7 +1,7 @@
-div .kontainer {
-    background-color: green;
+div{
+    background-color: #2EC1AC;
+    font-family: 'Open Sans', sans-serif;
 }
-
 .hidden {
     display: none;
 }
@@ -11,14 +11,14 @@ div .kontainer {
 }
 
 .gra_box {
-    height: 30px;
+    height: 50px;
     width: 50%;
     background-color: #888888;
     margin-left: 20em;
 }
 
 .ljus_gra_box {
-    height: 30px;
+    height: 50px;
     width: 50%;
     background-color: #B8B8B8;
     margin-left: 20em;
@@ -27,4 +27,8 @@ div .kontainer {
 input {
     margin-left: 25em;
 
+}
+button {
+    background-color:  #D2E603;
+    font-family: 'Open Sans', sans-serif;
 }

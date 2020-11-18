@@ -4,21 +4,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Form Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" href="./form_solutions.css">
 </head>
 <body>
     <div class="kontainer">
         <div class="vit-kontainer">
-            <td style="font-size:6px; line-height:10px; padding:50px 0px 50px 0px;" valign="top" align="left">
-                <img class="max-width" border="0"
-                    style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px; max-width:100% !important; width:100%; height:auto !important;"
-                    width="1000" alt="" data-proportionally-constrained="true" data-responsive="true"
-                    src="http://cdn.mcauto-images-production.sendgrid.net/0a78cfd5943a0773/75c92d87-049e-4916-b711-2ab8747ff13f/300x52.png">
+            <td style="font-size:6px; line-height:10px; padding:50px 0px 50px 0px;" valign="top" align="left">   
+                   <img class="max-width" border="0"
+                        style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px; max-width:10% !important; width:100%; height:auto !important;"
+                        width="10" alt="" data-proportionally-constrained="true" data-responsive="true"
+                        src="../bilder/seo-partner.png">
             </td>
+            <div class="ljus_gra_box"></div>
             <div class="gra_box"> </div>
             <br>
             <div class="left" style="font-family: inherit; text-align: inherit">Namn:&nbsp;</div><br>
-            <input id="name" type="text">
+            <label id="name" type="text">
+                <input type="text" name="namn">
             <br>
             <div class="ljus_gra_box"></div>
 
@@ -26,7 +29,8 @@
             <br>
             
             <div class="left" style="font-family: inherit; text-align: inherit">Telefonnummer:&nbsp;</div> <br>
-            <input id="tel-nummer" type="tel">
+            <label id="tel-nummer" type="tel">
+                <input type="tel" name="telefonnummer">
             <div class="ljus_gra_box"></div>
             
 
@@ -35,13 +39,15 @@
             <div class="gra_box"> </div>
             <br>
             <div class="left" style="font-family: inherit; text-align: inherit">Adress:&nbsp;</div><br>
-            <input id="adress" type="text">
+            <label id="adress-for-foretag" type="text">
+                <input type="text" name="adress" >
+            <label id="adress" type="text">
             <br>
             <div class="ljus_gra_box"></div>
             <div class="gra_box"> </div><br>
             <div class="left" style="font-family: inherit; text-align: 
           inherit">Organisationsnummer (valfritt)</div><br>
-            <input id="org_n" type="text">
+            <input id="org_n" type="text" name="organisationsnummer">
 
             <div class="ljus_gra_box"></div>
             <div class="gra_box"> </div>
@@ -50,8 +56,8 @@
             
             
 
-            <img class="hidden img1" src="../bilder/bergtest1.jpg" alt="">
-            <img class="hidden img2" src="../bilder/bergtest2.jpg" alt="">
+            <img class="hidden img1" src="../bilder/seo-partner.png" alt="Seopartner">
+            <img class="hidden img2" src="../bilder/circleK.png" alt="circleK">
 
 
             <button onclick="OrganisationN()">Kör</button>
@@ -65,11 +71,11 @@
 
 
                 function OrganisationN() {
-                    if (org_n.value == "557776-1234") {
+                    if (org_n.value == "559020-5133") {
                         img1.classList.remove("hidden");
                         img2.classList.add("hidden");
                     }
-                    if (org_n.value == "885542-7777") {
+                    if (org_n.value == "556191-6437") {
                         img2.classList.remove("hidden");
                         img1.classList.add("hidden");
                     }
