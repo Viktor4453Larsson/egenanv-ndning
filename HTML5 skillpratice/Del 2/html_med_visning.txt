@@ -1,0 +1,13 @@
+// Försök alltid att skriva om kod till din egen
+
+// Fördelen med att använda ett program som brackets är att du kan highligta ett element och sedan se det elementet i koden samtidigt
+
+// När du är duktig på HTML så ska du utan att behöva titta extra kunna veta vilka element du skapar i HTML med ögonen
+
+// Taggar och element är olika saker som det gäller att hålla reda på
+
+// h1 skapar en rubrik ett h1 element ser ut som följande <h1></h1>
+
+// p skaper en paragraf så ett paragraf element ser ut som följande <p></p>
+
+// En text som är mindre jämfört med en rubrik i font är h2,h3,h4,h5,h6 men om man tittar på h2 elementet ser du ut såhär <h2></h2>
