@@ -1,0 +1,9 @@
+// När vi går till en sida exempelvis Google.com så kan  vi ta bort allt framförURL:n. 
+
+// Strukturen på sidor är väldigt likt strukturen på filhanteraren eller finder på mac ex. c:\OC eller www.google.com/about ser du likheterna
+
+//Varje sida läggs på precis som / öppnar nästa mapp för dig kan du få en helt annan sida samma sak med redirects
+
+// Man behöver en texteditor för att skriva HTML som Notepad++
+
+// Det finns bättre redskap för att skriva HTML

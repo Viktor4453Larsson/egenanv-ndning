@@ -1,0 +1,6 @@
+// Det finns olika texteditors för att skriva kod några av dem bästa är Antom, Visual Studio Code, Sublime text 3
+
+// Dem bättre webbläsarna för att skapa kod är chrome och firexox developer edition
+
+// Ett bra ställe att ladda upp kod på är GitHub
+
