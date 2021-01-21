@@ -1,0 +1,38 @@
+<!-- Behövs inte men är rekommenderad att användas som praxis -->
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <title> är en tagg </title> är också en tag men <title> + </title> är ett element -->
+<title>HTML, några bra saker att veta</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Rubrik</h1>
+<p>En paragraf</p>
+<p>Paragraf</br>br</p>
+<p>Här skriver vi lite text 2 > 3 går att göra men inte 2 <!-- < 
+    är en reserverad karaktär i HTML  --> 3  </br></p>
+<h3>Du kan fullt använda olika tecken i HTML ex. $£€[[]£@</h3>
+<p>Men i vissa fall så behöver vi skriva tecken såhär &amp;  &lt;, &angle; &backprime; som skrivs &amp+abc av den kombinationen du vill använda för att nå tecknet; </p>
+<p><!-- Om vi vill skapa en mera tradionell paragraf så gör vi följande --> 
+    
+    <!-- Att göra såhär manuellt i HTML koden kommer inte förändra något -->
+    NBA är en baskett ligga 
+
+    NHL är en ishockeyligga 
+
+    Bundersliga är en tysk fotbollsliga 
+</p>
+<p><!-- Som du ser i det här exemplet fungerar saker plötsligt helt annourlunda --> 
+    
+    <!-- Med taggen &nbsp; kan vi göra häftiga saker, du kan repitera den här taggen för att själv skapa en snyggare HTML text -->
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NBA är en baskett ligga</br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NHL är en ishockeyligga</br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bundersliga är en tysk fotbollsliga 
+    <!-- Nu ser du ut som vi ville få det att se ut (Se ovanför) -->
+</p>
+<p>
+    Grekiska ord kräver speciala HTML tecken. &mu;, &delta;, &lambda;, &Delta</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Så här ser delta ut tre gånger om &Delta;, &Delta;, &Delta;
+</p>
+</body>
+</html>

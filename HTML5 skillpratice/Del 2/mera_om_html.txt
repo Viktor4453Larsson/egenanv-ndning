@@ -1,0 +1,5 @@
+// HTML står för Hyper Text Markup Language används endast för dem tråkiga delarna av text och knappar samt tabeller. Med andra ord ingen styling det är Cascade Style Sheets till för även kallad CSS. 
+
+// En del tecken måste skrivas på ett speciellt sätt eller på ett annat sätt i HTML som grekiska bokstäver, <, och handgjorda mellanrum med &nbsp;
+
+// Men andra tecken som @%/¤()) och ; kan användas fritt
