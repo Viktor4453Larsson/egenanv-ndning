@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Listor och tabeller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Taggar du har lärt dig hittils i HTML: h1,h2,h3,h4,h5,h6,h7,em,br,blockqute,thead,ol,li,td,th,i,strong,span,p,i,em,b -->
+<h1>Litor i HTML</h1>
+<!-- Så här ser tradionella listor ut utan någon som heslt förändring -->
+<p>Så här ser en tradionell <strong><em>tabell ut</em></strong></p>
+<thead>Frukter</thead>
+<ol>
+    <li>Banann</li>
+    <li>Apelsin</li>
+    <li>Äpple</li>
+</ol>
+<!-- Med type a så ändras vår lista från siffror till bokstavsordning istället med a som start litet a ger små bokstäver stor A ger stora bokstäver-->
+<p>Så här ser en tabell med <i>små bokstäver</i> ut</p>
+<thead>Grönsaker</thead>
+<ol type="a">
+    <li>Brocolli</li>
+    <li>Citron</li>
+    <li>Blomkål</li>
+</ol>
+<!-- Det ända vi förändrade i det här exemplet jämfört med det förra var att vi ändrade type med ett stor "A" vilket ändrar hur listan med li taggarna skrivs ut -->
+<h2>Såhär ser den ut med stora bokstäver</h2>
+<thead>Grönsaker</thead>
+<ol type="A">
+    <li>BROCOLLI</li>
+    <li>CITRON</li>
+    <li>BLOMKÅL</li>
+</ol>
+<!-- Det som händer här är två saker type är nu ändrad från a/A till i/I vilket ger oss romerska bokstäver på li taggen i vår tabell samt att star taggen ändrar det värde vi startar på i vårt fall är det 10 istället för ett så X istället för I med romerska bokstäver  -->
+<span>Så här ser en tabell som är gjorde med <b>romerska bokstäver som börjar på 5 åt ut</b></span><br/><br/>
+<thead>iPhone modeller</thead>
+<ol type="i" start="10">
+    <li>iPhone X</li>
+    <li>iPhone Xs</li>
+    <li>iPhone 11</li>
+</ol>
+<!-- Samma tabell med en större romerska bokstäver -->
+<span>Samma tabell med <b>stora romerska bokstäver</b></span><br/><br/>
+<thead>iPhone modeller</thead>
+<ol type="I" start="10">
+    <li>IPHONE X</li>
+    <li>IPHONE XS</li>
+    <li>IPHONE 11</li>
+</ol>
+<!-- Här skapar vi en lista på samma sätt men visar upp cirklar istället den här förändringen sker eftersom vi går från att använda ol som tagg till ul i början av det som täcker tabellen -->
+<p>Det här är en lista som är skapad med <b>ul och li taggarna</b></p>
+<ul>
+    <li>Äta frukost</li>
+    <li>Borsta tänderna</li>
+    <li>Äta middag</li>
+</ul>
+<!-- En del funktioner togs bort med HTML5 pågrund av att utvecklarna vill hellre att man använder CSS för vissa saker. Men det går att skapa samma resultat med style värdet i ul taggen + list-style-type (Vad vi vill ändra för stil på vår lista, till vilken) + square; då går listan från cirkel till fyrkant -->
+<p>Det här är en lista som är skapad med <i>fyrkanter istället</i></p>
+<ul style="list-style-type: square;">
+    <li>Kvadrat</li>
+    <li>Cirkel</li>
+    <li>Fyrkant</li>
+</ul>
+<!-- Här skriver vi en lista man ser sällan av, men som är bra när man beskriver eller förklarar något med text. Både definitioner och beskrivningar förväntas användas i den här formen av tabell. Flera definitioner kan användas för en beskrivning. Men kom ihåg att koden kommer anta att flera defenitioner som inte visas efter en beskrivning betyder samma sak  -->
+<h3>Beskrivnings lista</h3>
+<p>Den här listan byggdes med dt och dd taggar</p>
+<dl>
+    <dt>Kär</dt>
+    <dt>Förälskad</dt>
+    <dd>En känsla människor kan känna när dem stötter på något nytt som dem anser vara attraherande mera attraherande jämfört med andra objekt eller människor i den situationen</dd></br>
+    <dt>Frustration</dt>
+    <dd>Känna att dina ambitioner, planer, mål eller förväntningar inte nåddes och att resultet var mera negativt jämfört med vad du trodde du eller andra kunde uppnå</dd>
+</dl>
+</body>
+</html>
