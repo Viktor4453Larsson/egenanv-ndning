@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tabeller del 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tabeller del 2</h1>
+    <h2>Advancerade listor</h2>
+    <!-- En lista med romerska bokstäver -->
+    <p>frukter</p>
+    <ol type="I">
+        <li>Äpple</li>
+        <li>Apelsin</li>
+        <li>Banann</li>
+    </ol>
+    <p>frukter</p>
+    <!-- En lista med grekiska bokstäver -->
+    <ul style="list-style-type: lower-greek;">
+        <li>Äpple</li>
+        <li>Apelsin</li>
+        <li>Banann</li>
+    </ul>
+    <h2>Advancerade tabeller</h2>
+    <!-- Vi kommer här bygga en soduku liknande tabell med 12 diagonalt och 12 rader i sidleds -->
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<thead>Suddoko</thead>
+    <p></p>
+    <!-- Border lägger på en kant på hela tabellen -->
+    <table border="5">
+        <caption>
+            <h4>Ett sudoku puzzel</h4>
+            <!-- En bonusgrej är att u taggen inte ska användas om inte ett specialtecken i ett annat som språk i Kina, använd CSS istället-->
+            <p><em>Väggbeskrivning:</em> Allt innehåller 3x3 rutor, och varje kolumn och rad behöver skrivas ut med ett nummer mellan 1-9 samma nummer får inte upprepas på längden eller bredden eller i 3x3 rutan fler än 1 gång</p>
+        </caption>
+        <thead>
+            <tr>
+                <!-- Colspan är något nytt vi använder eftersom vi inte vill att vår tabell ska stretcha iväg på några rader för mycket jämfört med det andra. Allt det här kan vi midigera genom att använda colspan="(ett värde)" -> det här värdet beytder hur många kulumn platser vi vill ta upp Men egentligen sätter den bara en låda runt en table header i table head som minskar platsen den förbrukar i översta rubriken -->
+                <th colspan="7">Svårighetsgrad</th>
+                <th colspan="4">Lätt</th>
+            </tr>
+        </thead>
+        <!-- Här använder vi td för att skapa en ny rad på vårt Soduku och &nbsp; för att lägga till ett mellanrum, det eftersom man själv inte kan lägga till mellanrum i HTML -->
+        <tr>
+            <td>3</td>
+            <td>9</td>
+            <td>8</td>
+            <!-- Det här skapar en osynlig kolumn i vår tabell -->
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+            <td>2</td>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+            <!-- En använderbar genväg vi kan använda på tangentbordet är följande: Håll ner (Ctrl) (för windows) Command (Mac) samtidigt som du (vänsterklickar) framför &nbsp för att markera flera objekt samtidigt därefter tryck på (ALT) + (SHIFT) + (->) därefter (Ctrl + C) för att kopiera efter det (CTRL + V) för att klistra in. På sett kan vi få snabbare dubbel mellanrum-->
+        <tr>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>2</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;</td>
+            <td>8</td>
+            <td>&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>3</td>
+            <td>5</td>
+            <td>9</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>1</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>4</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>5</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <!-- Lägg märke till att vi mönstret med tr med en ny tr bryts var tredje rad ner vi kommer hur vi gör detta är att vi krokar avslutningstagen på den tredje raden som exempel (</tr>) med början av nästa rad (<tr>) istället för ordningen (</tr>) (<tr>) blir det omvänt i det här fallet till (<tr>) (</tr>) -->
+        <tr>
+        </tr>
+            <td>&nbsp;&nbsp;</td>
+            <td>4</td>
+            <td>9</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;</td>
+            <td>1</td>
+            <td>&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>6</td>
+            <td>9</td>
+            <td>5</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>4</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;</td>
+            <td>4</td>
+            <td>&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>5</td>
+            <td>9</td>
+            <td>&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+        <tr>
+        </tr>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>5</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>3</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>6</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;</td>
+            <td>2</td>
+            <td>&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>1</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+        <tr>
+        </tr>
+            <td>4</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>7</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;</td>
+            <td>3</td>
+            <td>&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;</td>
+            <td>9</td>
+            <td>4</td>
+            <td style="border: none"></td>
+            <td>2</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        </tr>
+    </table>
+</body>
+</html>
