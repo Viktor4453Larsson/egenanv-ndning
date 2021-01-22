@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kombinera tabeller, listor och bilder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>En god blandning</h1>
+    <h2>Dina favorit artister och deras filmer</h2>
+    <!-- Här gör vi listor inuti listor utan probelem så länge man skriver inuti den taggen man skrev innan och inte utanför annars blir det fel -->
+    <ol>
+        <li>Tom Hanks</li>
+        <li>
+            Några av hans bättre filmer
+            <ol type="a">
+        </li>
+        <li>Cast Away</li>
+        <li>Forrest Gump</li>
+        <li>The Terminal</li>
+    </ol>
+    <li>Leonardo DiCaprio</li>
+    <li>
+        Dem filmerna jag tycker jag gillar mest där Lenardo DiCaprio är med
+        <ol type="i">
+    </li>
+    <li>The Great Gatsby</li>
+    <li>The Aviator</li>
+    <li>Catch Me If You Can</li>
+    </ol>
+    <li>Jim Carrey
+    <li>
+        Några roliga filmer med Jim Carrey att njuta av
+        <ol style="list-style-type: square;">
+    </li>
+    <li>Dumb And Dumber</li>
+    <li>The Mask</li>
+    <li>Liar Liar</li>
+    </ol>
+    </li>
+    </ol>
+
+    <h2>Kombinera med bilder</h2>
+    <caption>
+        <h3>Bilder i tabeller</h3>
+    </caption>
+    <table>
+        <td>
+            <tr>
+                <img src="./bilder/ashley-byrd-PFcEWaJnAto-unsplash.jpg" alt="Svart parfym på svart backgrund"
+                    height="150">
+                <td>
+                </td>
+                <img src="./bilder/elena-koycheva-PPizseKigaw-unsplash.jpg" alt="Avokado design med blå backgrund"
+                    height="155">
+                <td>
+                </td>
+                <img src="./bilder/filip-baotic-_3cLB_mvVTw-unsplash.jpg" alt="Orange parfym på svart backgrund"
+                    height="150">
+                <td>
+                </td>
+                <img src="./bilder/maksim-samsonov-IxXJjPV0yZs-unsplash.jpg" alt="Gul backgrund med ben från en person"
+                    height="150">
+        </td>
+        <td>
+            <img src="./bilder/max-muselmann-oIVvGqqwVJw-unsplash.jpg" alt="Kvinnoporträt med löv" height="200">
+        </td>
+        <td>
+            <img src="./bilder/napat-saeng-mVGW8j9rrC4-unsplash.jpg" alt="Kvinna i glasögon med kreativ backgrund" height="200">
+        </td>
+        <td>
+            <img src="./bilder/park-street-v9G8KNVtBhc-unsplash.jpg" alt="Svartvit kvinnoporträt" height="200">
+        </td>
+        <td>
+            <img src="./bilder/rangga-cahya-nugraha-kBRzSkOk6eo-unsplash.jpg" alt="Asiatisk kvinna mot en vägg" height="200">
+        </td>
+        </tr>
+        <!-- En cool sak du kan göra ibland är att ta en bild du vill använda men istället för att installera den så kan du dra den till sökfältet längst upp i chrome -> ex .jpg väggen och sen bara klistra in den istllet för att ladda ner bilder hela tiden -->
+    </table>
+</body>
+</html>
