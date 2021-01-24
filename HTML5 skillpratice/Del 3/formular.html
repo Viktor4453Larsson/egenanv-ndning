@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulär i HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulär och enkla kommandon</h1>
+    <!-- Alla formulär börjar alltid med form taggen -->
+    <!-- Här ligger vi på en så kallad event handeler som ser till att vi kan läsa av när något inträffar i det här fallet när vi trycker på knappen Skicka avlysnas det av (onsubmit) -->
+    <!-- console.log('') är ett bra sätt att felsöka HTML på -->
+    <form onsubmit="alert('Du har skickat iväg forumet')">
+        <!-- Det finns massor av olika typer man kan använda i sin skrivrutor (inputs) exempelvis. text för text -->
+    <input type="text">
+    <!-- För lösenord -->
+    <input type="password">
+    <!-- För en knapp med en cirkel (radio)  -->
+    <input type="radio">
+    <!-- Här kan du skriva in en tid -->
+    <input type="time">
+    <!-- Vecka -->
+    <input type="week">
+    <!-- Nummer -->
+    <input type="number">
+    <!-- Månad -->
+    <input type="month">
+    <!-- Denna är osynlig -->
+    <input type="hidden">
+    <!-- För alla sorters email -->
+    <input type="email" placeholder="ex 123@gmail.com">
+    <!-- Om du vill att användaren ska kunna välja en fil -->
+    <input type="file">
+    <!-- Det här är en knapp som heter Skicka värt att pointera att value skriver en text inuti-->
+    <input type="submit" value="Skicka">
+    <!-- Man kan skapa knappar så här också i HTML -->
+    <button onclick="console.log('Den mindre användbara knappen trycktes')">Så här ser en knapp skapad med <em>button</em> ut <i>Innan så var den här knappen oanvändbar men med onclick kan vi göra den mera användbar</i></button>
+    <!-- Det är till stor hjälp att högerklicka i chrome och välja inspektera eller alternativt att trycka kombinationen (Ctrl+Shift+I) -->
+    </form>
+</body>
+</html>
