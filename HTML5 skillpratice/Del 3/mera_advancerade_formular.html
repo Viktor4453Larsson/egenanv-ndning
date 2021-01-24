@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Advancerade formulär</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulär som är mera komplexa</h1>
+    <form action="">
+        <!-- Textarea kan man själv reglera med mus i Chrome eller Firefox, se till att dem inte stänger efter andra taggar utan med sig själv (textarea) -->
+        <textarea name="" id="" cols="50" rows="7"></textarea></br>
+        <!-- Select med option ger oss en så kallad "drop down meny" för att kunna välja mellan flera alternativ -->
+        <select name="" id="">
+            <option value="Mjölk">Mjölk</option>
+            <option value="Chedar ost">Chedar ost</option>
+            <option value="Get Mjölk">Get Mjölk</option>
+            <option value="Godis">Godis</option>
+        </select></br>
+        <p>Välj en av produkterna som du skulle vilja ha:</p>
+        <form action="">
+            <!-- Lägg märke till här att value inte fungerar när vi försöker ge nament Cheddar till vår (radio) då behöver vi istället använda en HTML tag som heter label -->
+            <!-- När det gäller användarvänlighet för nedsättningar är det rekommenderat att använda (for) taggen till (label) -->
+            <!-- Vi kan även använda taggen (id) när vi vill peka på ett specifikt element som vi vill använda i vår kod -->
+            <input id="cheddar" type="radio" value="Cheddar">
+            <label for="cheddar">Cheddar</label></br>
+            <!-- Se till att när du skriver id att det görs i -> input och att for görs i -> label -->
+            <input id="mjolk" type="radio">
+            <label for="mjolk">Mjölk för getter</label></br>
+            <input id="godis" type="radio">
+            <label for="godis">Latosfritt Godis</label></br>
+            <!-- Ett dåligt sätt att implementera label input på för användar vänlighet är det här!!!!!!!!!! OBSERVERA-->
+            <label for="">
+                <input type="radio">
+                123 - Dålig metod
+            </label>
+            </br>
+            <input type="submit" value="Skicka" aria-describedby="vara-valja">
+        </form>
+    </form>
+    <!-- En låda som du kan lägga i flera lådor för att beskriva saker på din sida -->
+    <!-- Vi använder den där diven för användarvänlighets skull, vi kan dölja den för andra genom att använda (style) taggen -->
+    <div id="vara-valja" style="visibility:hidden">
+        <h2>En beskrivning för hur din knapp kommer fungera</h2>
+        <p>Att trycka på knappen Skicka kommer spara ditt val av vara när du skickar</p>
+    </div>
+    <!-- (Alt) taggen används av sökmotorer och förbättrar användarvänligehten för bilder -->
+    <img src="./bilder/wNU1pji.jpg" height="600" alt="En svart hund mitt under vintertid som får snö på sig">
+</body>
+</html>
