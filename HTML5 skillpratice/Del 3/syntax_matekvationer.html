@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="description" content="På den här sidan så kommer vi gå igenom syntax och mattekvationer i HTML">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="html, ekvationer, syntax, webbutveckling och kodning" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Syntaxer och mattekvationer</title>
+    <!-- Det finns många olika tillägg man kan använda när man programmerar. Det är inte rekommenderat att användas i början men känner man att man börjar bli rätt duktig är dem alltid trevliga hjälpmedel -->
+    <!-- Allt det här använder vi för att få (highlightJS) att fungera -> ger oss extra funktioner i (HTML5) -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <!-- Det här är ett annat tillägg vi kan använda till HTML som heter (Mathjax) -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="">Syntaxer och mattekvationer</h1>
+    <!-- Ett kommando som sällan används men används ibland av olika HTML biblotek du kan hitta på nätet -->
+    <pre>
+    <code>
+        &lt;p&gt; Detta skrevs med highlightJS &lt;/p&gt;
+        &lt;p&gt; Titta där!!! Här har vi syntax markerad text &lt;/p&gt;
+        &lt;p class="glas" &gt; Vi kan se det om jag lägger in en klass som heter glas i det här P taggen så ser man att det är HTML kod &lt;/p&gt;
+    </code>
+    </pre>
+    <pre>
+        <code>
+            body {
+                background-color: orange;
+                font-family: "sans-serif";
+            }
+        </code>
+        <pre>
+            <code><p>When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
+                $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p></code>
+        </pre>   
+        <script>
+            /* Den här taggen/kommandot låter dig skriva HTML i JS */
+            document.write("");
+        </script>
+    </pre>
+</body>
+</html>
