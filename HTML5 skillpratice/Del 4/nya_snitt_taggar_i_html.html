@@ -18,18 +18,18 @@
         <p><i>Man kan även skriva ut en nav + ul + li för navigationen mellan flera sidor</i></p>
         <nav>
             <ul>
-            <li>Om oss</li>
-            <li>Våra tjänster/produkter</li>
-            <li>Inställningar</li>
-            <li>Logga In/Logga Ut</li>
-            <li>Registrera dig</li>
+                <li>Om oss</li>
+                <li>Våra tjänster/produkter</li>
+                <li>Inställningar</li>
+                <li>Logga In/Logga Ut</li>
+                <li>Registrera dig</li>
             </ul>
         </nav>
         <small>Specialerbjudande innan månadens slut!</small>
     </header>
     <!-- (main) taggen är för allt annat mellan (header) och (footer) -->
     <main>
-    <h1>Välkomen till Hårdiskfixarna</h1>
+        <h1>Välkomen till Hårdiskfixarna</h1>
         <!-- Förrut så skapade man divs för absolut allting i webbutveckling -->
         <!--<div id="framtida-inlagg"></div>
         <div id="huvud-bilderna"></div>
@@ -38,34 +38,52 @@
         <section>
             <h2>Se hur vi lagar våra hårdiskar</h2>
             <nav>
-            <a href="#">Innan vi lagar din hårddisk</a>
-            <a href="#">Själva processen under fixande</a>
-            <a href="#">Efter vi lagat din hårdisk</a>
+                <a href="#">Innan vi lagar din hårddisk</a>
+                <a href="#">Själva processen under fixande</a>
+                <a href="#">Efter vi lagat din hårdisk</a>
             </nav>
         </section>
         <section>
             <h2>Framtida inlägg</h2>
             <article>
-            <p>
-                Inlägg 1
-            </p>
-        </article>
-        <article>
-            <p>
-                Inlägg 2
-            </p>
-        </article>
-        <article>
-            <p>
-                Inlägg 3
-            </p>
-        </article>
+                <!-- Skapar en förkortad version av en artikel som man kan expandera, att vi lägger på en (open) attribut ser till att det vi skriver är öppet från första början-->
+                <details open>
+                    <!-- Här skriver du vad rubriken för den artikel du vill prata om ska heta -->
+                    <summary>
+                        <!-- Gör en markör på rubriken eller (summary) för att få användarens fokus och uppmärksamhet mot rubriken -->
+                        <mark>Är SSD bättre än HDD, se vår jämförelse</mark>
+                    </summary>
+                    Historiskt sätt har Hårdiskarna (HDD) varit mycket mer populära och använda, det betyder att det är
+                    lätt att få tag i dem men även att det kan lagra upp till flera terabite (tb) i minneskapacitans.
+                    Förr vår rådet alltid att HDD är långt billigare och tillräckligt bra. Men i och med att marknaden
+                    har producerat mer och mer Solid state diskar (SSD) så har även priserna gått ner tillräckligt
+                    mycket dessutom är en SSD snabbare, har mindre sannolikhet att gå sönder. Därför rekomminderar vi
+                    starkt konsumenter att köpa en SSD om ett val mellan dess måste göras.
+                </details>
+            </article>
+            <article>
+                <details open>
+                    <summary>
+                        <mark>Hur mycket snbbare brukar en SSD vara</mark>
+                    </summary>
+                    En SSD brukar beroende på vilken HDD vi pratar om och SSD vara cirka tio gånger snabbare. En SSD brukar kunna avläsa runt 1 GB pär sekund medans läshastigehetrna på en HDD med cirka 7200 rpm kan vara cikra 300mb pär sekund. Så hastigehterna märks helt klart. Dem största skillnaderna ser du när du startar datorn och när du spelar spel med många "loading screens"
+                </details>
+            </article>
+            <article>
+                <details open>
+                    <summary>
+                        <mark>Vad kan du göra för att undvika att skadda din HDD?</mark>
+                    </summary>
+                    Om man ska hålla det kort och konsist: Se alltid till att din HDD inte är nära vätskor som kan spillas på den, koppla in eller stoppa in din HDD på en väl förvarad plats i din PC så att den inte bara hänger ut. Se till att aldrig tappa din HDD på något sätt, även fall på cirka en halv meter kan förstöra en HDD så var alltid extra försiktig med den. Köp om du kan en ny HDD istället för en beganad
+                </details>
+            </article>
         </section>
         <aside>
-            <h4>Premuniera på vår tidning</h4>
+            <!-- (contenteditable="true") ser till att du kan redigera rubriker och element live medans du koddar på själva sidan först innan du gör det i koden -->
+            <h4 contenteditable="true">Premuniera på vår tidning</h4>
             <form>
-            <input type="email">
-            <button type="submit" value="premunerant">Premuniera</button>
+                <input type="email">
+                <button type="submit" value="premunerant">Premuniera</button>
             </form>
         </aside>
     </main></br>
