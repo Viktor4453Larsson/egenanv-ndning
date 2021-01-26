@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="description" content="På den här sidan så kommer vi gå igenom snittningar i HTML5">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="html, Snittning, snittningar, kodning, kodning, coding" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Olika former av snittningar i HTML5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Snittning i HTML5</h1>
+    <!-- (header) och (footer) ska alltid vara innuti (body) i HTML för då syns dem i (header) skulle dem inte synas OBSERVERA DETTA!!! -->
+    <!-- En header kommer alltid längst upp -->
+    <header>
+        En loga som tar dig till <b><code>header</code></b>
+        <p><i>Man kan även skriva ut en nav + ul + li för navigationen mellan flera sidor</i></p>
+        <nav>
+            <ul>
+            <li>Om oss</li>
+            <li>Våra tjänster/produkter</li>
+            <li>Inställningar</li>
+            <li>Logga In/Logga Ut</li>
+            <li>Registrera dig</li>
+            </ul>
+        </nav>
+        <small>Specialerbjudande innan månadens slut!</small>
+    </header>
+    <!-- (main) taggen är för allt annat mellan (header) och (footer) -->
+    <main>
+    <h1>Välkomen till Hårdiskfixarna</h1>
+        <!-- Förrut så skapade man divs för absolut allting i webbutveckling -->
+        <!--<div id="framtida-inlagg"></div>
+        <div id="huvud-bilderna"></div>
+        <div id="mera-information"></div>  -->
+        <!-- Istället så gör vi såhär, man använder taggen (section) oftare nu-->
+        <section>
+            <h2>Se hur vi lagar våra hårdiskar</h2>
+            <nav>
+            <a href="#">Innan vi lagar din hårddisk</a>
+            <a href="#">Själva processen under fixande</a>
+            <a href="#">Efter vi lagat din hårdisk</a>
+            </nav>
+        </section>
+        <section>
+            <h2>Framtida inlägg</h2>
+            <article>
+            <p>
+                Inlägg 1
+            </p>
+        </article>
+        <article>
+            <p>
+                Inlägg 2
+            </p>
+        </article>
+        <article>
+            <p>
+                Inlägg 3
+            </p>
+        </article>
+        </section>
+        <aside>
+            <h4>Premuniera på vår tidning</h4>
+            <form>
+            <input type="email">
+            <button type="submit" value="premunerant">Premuniera</button>
+            </form>
+        </aside>
+    </main></br>
+    <!-- En footer har vi allra längst ner på en sida, för att beskriva lite kort information om att vi äger materiallet eller har upphovsrätten och några länkar oftast -->
+    <footer>Copyright informationen kommer att skrivas här! Ex. © 2021 med hjälp utav taggen <b><code>footer</code></b>
+    </footer>
+    <a href="#">Om oss</a>
+    <a href="#">Privat policy</a>
+    <a href="#">Historia om företaget</a>
+    <a href="#">Kontakta oss</a>
+    <a href="#">Handla</a>
+</body>
+</html>
