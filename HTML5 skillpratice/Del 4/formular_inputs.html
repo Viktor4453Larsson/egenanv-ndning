@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="description" content="På den här sidan så kommer vi gå igenom inputs fpr formulär i HTML5">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="html, input, inputs, kodning, taggar, formulär, form, coding" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inputs i formulär</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Inputs i formulär</h1>
+    <form>
+        <label for="en_ruta_for_text">
+            Text input
+            <!-- (autofocus) används för att din mus ska ändras till skrivbart läge i utseende när du är över en text -> det låter användaren veta att man kan göra något, därmed är det bra att använda -->
+            <input type="text" autofocus>
+            </br>
+        </label>
+        <!-- Lägg märke till att på exemlvis datum och sånt (type="date") så kommer inte (autofocus) det här fungera eftersom di inte skriver något-->
+        Datum Input
+        <label for="en_ruta_for_datum"><input type="date" autofocus>
+            </br>
+        </label>
+        Email Input
+        <!-- Förrut behövde man lägga på email validering i äldre versioner av HTML men i HTML5 behöver man inte göra det längre på (type="email") -->
+        <label for="en_ruta_for_email"><input type="email" autofocus>
+            </br>
+        </label>
+        Lösenord Input
+        <!-- (type=password) räknas inte direkt som HTML men kan användas av HTML5 -->
+        <label for="en_ruta_for_losenord"><input type="password" autofocus>
+            </br>
+        </label>
+        Tid Input
+        <label for="en_ruta_for_tid"><input type="time" autofocus>
+            </br>
+        </label>
+        Url Input
+        <label for="en_ruta_for_att_lanka_url"><input type="url" autofocus>
+            </br>
+        </label>
+        Färg Input
+        <!-- (type=color) är en speciell input som skiljer sig lite från dem andra -->
+        <label for="en_ruta_for_att_lanka_en_farg"><input type="color" autofocus>
+    </form>
+    </label>
+    <!-- Man kan skapa en ännu merad advancerad lista där man kan få fram flera alternativ som förslag om man kombinerar en (input) + (list="xyz") som man sätter ihop med en (datalist list="xyz") + (option) som det olika förslagen man kan välja på i den listan -->
+    <input list="stader">
+    <datalist id="stader">
+        <option value="Stockholm"></option>
+        <option value="Malmö"></option>
+        <option value="Skåne"></option>
+        <option value="Upplandsväsby"></option>
+    </datalist></br>
+    <button type="submit">Skicka i väg din information</button>
+</body>
+</html>
