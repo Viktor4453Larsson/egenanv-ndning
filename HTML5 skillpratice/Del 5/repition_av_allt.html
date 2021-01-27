@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="description" content="På den här sidan så kommer vi gå igenom snittningar i HTML5">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="html, repition, repition, kodning, coding, tags" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML repition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="../Del 4/nya_snitt_taggar_i_html.html">Snitt taggar i HTML</a>
+        <a href="../Del 4/formular_inputs.html">Formulär i HTML</a>
+        <a href="../Del 3/syntax_matekvationer.html">Tillägg i HTML</a>
+        <a href="../Del 2/advancerad_text_formatering.html">Text formatering i HTML</a>
+        <a href="../Del 2/mera_om_html.html">Mera om HTML5</a>
+        <!-- Man kan även göra sidolänkar på ens egna sida i HTML som man har uppe som en referens till det man har på den sidan -->
+        <a href="./repition_av_allt.html#multimedia">Multimedia</a>
+    </nav>
+    <section>
+        <h1 style="display: inline;">HTML repition</h1>
+        <h2>Text relaterade taggar</h2>
+        <!-- (h) taggar och (p) taggar är block element så det tar upp hela sidans bred som HTML taggar -->
+        <!-- (style="display: inline;" gör att alla element hamnar på samma rad och inte under varandra) -->
+        <h1 style="display: inline;">H1</h1>
+        <h2 style="display: inline;">H2</h2>
+        <h3 style="display: inline;">H3</h3>
+        <h4 style="display: inline;">H4</h4>
+        <h5 style="display: inline;">H5</h5>
+        <h6 style="display: inline;">H6</h6>
+        <p>Långa block av text som är block element</p>
+        <span>Span tar <i>bara</i> så mycket textplats som den behöver</span>
+        <span><em>Så här ser span ut</em><b><code>span</code></b></span>
+    </section>
+    <section>
+        <h2>Presentations element</h2>
+        <img src="../Del 3/bilder/ashley-byrd-PFcEWaJnAto-unsplash.jpg" alt="Svart parfym med svart parfym"
+            height="250">
+        <p>Några kända parfym företag</p>
+        <ol>
+            <li>ROJA Parfumes</li>
+            <li>FRAGRANCE DU BOIS</li>
+            <li>NISHANE</li>
+        </ol>
+        <p>Ingridienser i parfymer</p>
+        <ul>
+            <li>Blommor</li>
+            <li>Trä</li>
+            <li>Alkohol</li>
+        </ul>
+        <thead>Häftiga färger</thead>
+        <table border="2">
+            <tr>
+                <td><b>Navy</b></td>
+                <td>Chartreuse</td>
+                <td>Coral</td>
+            </tr>
+            <tr>
+                <td><b>#000080</b></td>
+                <td>#DFFF00</td>
+                <td>#FF7F50</td>
+            </tr>
+            <tr>
+                <td><b>(0,0,128)</b></td>
+                <td>(223, 255, 0)</td>
+                <td>(255, 127, 80)</td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <h2 id="multimedia">Multimedia</h2>
+        <!-- (preload="true") attributen ser till att videon laddas in samtidigt som sidan gör det -->
+        <video src="../Del 4/multimedia/yt1s.com - New kind of transportation_360p.mp4" height="400" width="600"
+            controls preload="true">Tyvärr, din HTML version stödjer inte uppspelning av den här videon</video>
+        <audio src="../Del 4/multimedia/lRwk001 A vous non autre.mp3" controls></audio>
+    </section>
+    <section>
+        <h2>Formulär element</h2>
+        <form action="#">
+            <label for="email-adress">Email</label>
+            <input id="email-adress" type="email"></br>
+            <label for="losen">Lösenord</label>
+            <input id="losen" type="password">
+            <label for="date-tid">Datum</label>
+            <input id="date-tid" type="date">
+            <label for="farg">Välj färg</label>
+            <input id="farg" type="color">
+        </form>
+    </section>
+</body>
+</html>
