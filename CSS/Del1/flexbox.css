@@ -2,38 +2,49 @@ body {
     margin: 0;
 }
 .kontainer {
-    border: 6px solid black;
+    border: 4px solid black;
+    /* För att aktivera flexbox så behöver man skriva in följande kommando (display: flex;) */
+    display: flex;
+    /* Om man vill få bort en kant på slutet kan man använda något som kallas för (inline-flex) */
+    display: inline-flex;
+    /* (flex-direction: row;) ger oss samma ordning som nu men (flex-direction: row-reverse;) får ordningen att gå från backlänges till fram */
+    /*flex-direction: row-reverse;*/
+    /* Man kan även få alla lådorna som heter sak att gå tillbaks till upp till ner ordning om man använder kommandot  flex-direction: (column); eller flex-direction: (column-reversed);*/
+    /* Något annat vi kan använda kallas för (flex-wrap: wrap;) för att sidan ska ta hänsyn till om vi minskar den eller inte wrap-reverse ser till att lådorna saker trillar uppåt inte neråt */
+    /*flex-wrap: wrap;*/
+    /* (flex-flow kan användas för att kombinera row-reverse och wrap exempelvis) */
+    flex-flow:row-reverse wrap ;
 }
-.flex-item {
+.flex-sak {
     color: white;
     font-size: 1.5rem;
     padding: 1rem;
     text-align: center;
 }
-.sak1 {
+.sak-1 {
     background-color: yellow;
 }
-.sak2 {
+.sak-2 {
     background-color: tomato;
 }
-.sak3 {
+.sak-3 {
     background-color: turquoise;
 }
-.sak4 {
+.sak-4 {
     background-color: violet;
 }
-.sak5 {
+.sak-5 {
 background-color: bisque;
 }
-.sak6 {
+.sak-6 {
 background-color: cornflowerblue;
 }
-.sak7 {
+.sak-7 {
 background-color: crimson;
 }
-.sak8 {
+.sak-8 {
 background-color: darkgoldenrod;
 }
-.sak9 {
+.sak-9 {
 background-color: darkseagreen;
 }
