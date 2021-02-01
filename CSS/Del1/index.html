@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="På den här sidan så kommer vi gå igenom CSS-Flexbox">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="html, multimedia, kodning, taggar" name="viewport">
+    <meta content="width=device-width, initial-scale=1">
+    <title>Multimedia i HTML 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Multimedia i HTML 5</h1>
+        <h3>Ljud</h3>
+        <!-- Man använder (audio) taggen för att lägga in med -> sourc src. Men för att det ska fungera behöver man lägga på en controls attribut för att kunna sätta på stänga av eller spola igenom musik -> kunna lyssna på det (loop) ser till att musik spelas igen när den väl tar slut. Det finns ävem (autoplay) men det rekommenderas inte, istället är det bättre att inte använda den-->
+        <audio src="./multimedia/lRwk001 A vous non autre.mp3" controls loop>
+        Din webbläsare stödjer tyvärr inte uppspelning av den här videon :/
+        </audio>
+        <h3>Videor</h3>
+        <!-- En video kan länkas genom att man skriver ut video taggen, åter igen vill vi lägga på controls taggen för att göra den här formen av multimedia användbar, du kan även alltid ändra höjden med taggen (height) -->
+        <video src="./multimedia/yt1s.com - New kind of transportation_360p.mp4" controls height="500">
+        Din webbläsare stödjer tyvärr inte uppspelning av den här videon :/
+        </video>
+        <!-- Den kan vara dyrt att ladda upp sina egna vidoes på en hemsida men då finns en bra lösning som heter cdn eller vimeo -->
+        <h1>Allting annat</h1>
+        <!-- Om det av någon anledning finns användare som inte har en webbläsare som stödjer HTML5 vilket är cirka 3% av personer så använder man nedstånde taggar för flash och andra uppsleningsmetoder (iframe), (embed), (object) -->
+        <!-- Som vi exempelvis gjorde med den här youtube videon den rekommenderade att använda (embed) i delningsalternativen -->
+        <iframe title="123" iframe width="560" height="315" src="https://www.youtube.com/embed/X8NEmWmrLHI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="0"></iframe>" 
+        <embed src="" type="">
+            <!-- Objeckt taggen låter dig skriva andra taggar + den video du länkar men gör samma jobb som ovanstående -->
+            <!-- Här kan man exempelvis stoppa in typen pdf i (data) taggen lägga på (height) och (width) för rätt storlek och länka till den på (type) taggen -->
+        <object title="pdf"  data="./multimedia/Scienceofscience.pdf" height="1500" width="500" type="application/pdf">
+        <p>Om din läsare inte stödjer en video kan vi skriva saker här till dig</p> 
+        <div class="flex-item sak1">Sak1</div>
+        <div class="flex-item sak2">Sak2</div>
+        <div class="flex-item sak3">Sak3</div>
+        <div class="flex-item sak4">Sak4</div>
+        <div class="flex-item sak5">Sak5</div>
+        <div class="flex-item sak6">Sak6</div>
+        <div class="flex-item sak7">Sak7</div>
+        <div class="flex-item sak8">Sak8</div>
+        <div class="flex-item sak9">Sak9</div>
+    </div>
+</object>
+</body>
+</html>

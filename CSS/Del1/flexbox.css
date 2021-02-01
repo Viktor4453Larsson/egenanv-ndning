@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+}
+.kontainer {
+    border: 6px solid black;
+}
+.flex-item {
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+.sak1 {
+    background-color: yellow;
+}
+.sak2 {
+    background-color: tomato;
+}
+.sak3 {
+    background-color: turquoise;
+}
+.sak4 {
+    background-color: violet;
+}
+.sak5 {
+background-color: bisque;
+}
+.sak6 {
+background-color: cornflowerblue;
+}
+.sak7 {
+background-color: crimson;
+}
+.sak8 {
+background-color: darkgoldenrod;
+}
+.sak9 {
+background-color: darkseagreen;
+}
