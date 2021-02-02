@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+.kontainer {
+    border: 4px solid black;
+    display: flex;
+    /* Bestämmer att lådorna ska vara på varandra från upp till ned */
+    flex-direction: column;
+    /* Bestämmer höjden */
+    height: 800px;
+    /* Ser till att flytta allt till mitten */
+    justify-content: center;
+    
+}
+.flex-sak {
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+.sak-1 {
+    background-color: yellow;
+}
+.sak-2 {
+    background-color: tomato;
+}
+.sak-3 {
+    background-color: turquoise;
+}
+.sak-4 {
+    background-color: violet;
+}
+.sak-5 {
+background-color: bisque;
+}
+.sak-6 {
+background-color: cornflowerblue;
+}
+.sak-7 {
+background-color: crimson;
+}
+.sak-8 {
+background-color: darkgoldenrod;
+}
+.sak-9 {
+background-color: darkseagreen;
+}

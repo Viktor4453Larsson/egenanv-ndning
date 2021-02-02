@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+}
+.kontainer {
+    border: 4px solid black;
+    display: flex;
+    height: 800px;
+    /* Kommer strecha hela sak-lådorna så många pixlar som vi angav med (align-items: stretch;), (align-items: flex-start;) flyttar upp allt istället, (align-items: flex-end;) trycker ner allt mot botten, (align-items: baseline;) är den linje där alla bokstäverna sitter på */
+    align-items: baseline;
+    
+}
+.flex-sak {
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+.sak-1 {
+    background-color: yellow;
+    padding-bottom: 2rem;
+}
+.sak-2 {
+    background-color: tomato;
+    padding-bottom: 7rem;
+    font-size: 25px;
+}
+.sak-3 {
+    background-color: turquoise;
+    padding-bottom: 5rem;
+}
+.sak-4 {
+    background-color: violet;
+}
+.sak-5 {
+background-color: bisque;
+}
+.sak-6 {
+background-color: cornflowerblue;
+}
+.sak-7 {
+background-color: crimson;
+}
+.sak-8 {
+background-color: darkgoldenrod;
+}
+.sak-9 {
+background-color: darkseagreen;
+}
