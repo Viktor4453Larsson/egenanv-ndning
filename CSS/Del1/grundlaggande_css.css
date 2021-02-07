@@ -1,0 +1,19 @@
+/* Det är alltid att rekommendera att hålla mellanrum i sin CSS på flera rader som följande exempel */
+/* Det är extremt viktigt OBSERVERA! att inte glömma ; (semi-kolon) i CSS, även att behålla {} (En stängd och öppen måsvinge) */
+body {
+    background-color: aquamarine;
+}
+p {
+    /* Ändrar färgen till det vi väljer, i det här fallet till ett rgb värde */
+    color: rgba(223, 194, 66, 0.644);
+    /* Såhär gör vi saker fettstillade i CSS även om det går utmärkt redan med <b></b> taggen i HTML */
+    font-weight: bold;
+    /* Såhär ändrar vi storleken i CSS */
+    font-size: 25px;
+}
+h3 {
+    font-size: 50px;
+}
+h2 {
+    font-weight: bold;
+}
