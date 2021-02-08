@@ -1,0 +1,47 @@
+/* * betyder att vi vill ändra på allting i systemet */
+/* I det här fallet gör det allting rött */
+* {
+background: rgb(228, 115, 115);
+}
+/* Det här gör att vår div blir blå */
+div {
+    color: rgb(48, 35, 156);
+}
+/* Det här påverkar alla li element i CSS i det här fallet till en ljusgrön för backgrundsfärgen */
+li {
+    background-color: rgb(144, 214, 144);
+}
+/* Ändrar vår spans utseende */
+span {
+    font-weight: bold;
+}
+/* Det här är en klass som vi kan använda i CSS */
+/* För att den här CSS klassen ska kunna fungera måste vi sätta ihop den med dem HTML element som vi vill ändra */
+/* Man skriver (.) för att göra en klass i CSS */
+.mellanrum {
+background-color: orange;
+margin-left: 30px;
+}
+.margin-top {
+    margin-top: 50px;
+}
+/* Vi skriver (#) för att använda ID:en i CSS */
+/* Man kan bara använda ett ID för en sak på en sida OBSERVERA! inte till flera därför är dem inte rekommenderade därmed är klasser det för dem kan användas flera gånger */
+#lilla {
+    color: rgb(245, 3, 172);
+}
+/* Hur gör man om man vill bara ändra på ett specifikt element utav flera? */
+/* Man sätter det elementet man använt och vill bara välja ut + klassen eller id:t som man använde till det utan några mellanrum -> nästa gång det elementet skrivs ut utan den klassen eller ID:t så kommer den inte vara stylad */
+/* Allt det här gäller fortfarande om man fortsätter lägga på klasser efter det element som man använder */
+span.mellanrum.margin-top {
+    background-color: orange;
+margin-left: 30px;
+margin-top: 50px;
+}
+/* OBSERVERA det betyder också att om inte alla klasserna och taggarna är identiska med dem som används så kommer inte stylen visas på det elementet */
+/* Vad kan du göra om du vill styla två olika element på samma sätt låt säga li och p taggen */
+/* Här flyttar vi både li och p elementet åt höger */
+li, p {
+    margin-left: 250px;
+}
+
