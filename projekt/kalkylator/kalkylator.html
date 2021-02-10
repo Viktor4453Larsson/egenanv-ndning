@@ -8,52 +8,37 @@
 </head>
 <body>
     <h1>Kalkylator</h1>
+    <script src="./kalkylator.js"></script>
+    <!-- calculator -->
     <div class="kalkylator">
         <table>
             <caption>Kalkylator</caption>
-            <tr id="skärm">
-                <td>0</td>
-            </tr>
-            <tr>
-                <th id="Räknesätt">
-                <td>+</td>
-                <td>-</td>
-                <td>X</td>
-                <td>%</td>
-                </th>
-            <tr>
-                <th id="NummerRad1">
-                <td>7</td>
-                <td>8</td>
-                <td>9</td>
-                <td>=</td>
-                </th>
-            </tr>
-            <tr>
-                <th id="NummerRad2">
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>=</td>
-                </th>
-            </tr>
-            <tr>
-                <th id="NummerRad3">
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>=</td>
-                </th>
-            </tr>
-            <tr>
-                <th id="NummerRad4">
-                <td>0</td>
-                <td>.</td>
-                <td>AC</td>
-                <td>=</td>
-                </th>
-            </tr>
-            </tr>
+            <!-- calculator_display -->
+            <div class="kalkylator_skarm">
+                <tr class="svartskarm" id="skärm">
+                    <td>0</td>
+                </tr>
+            </div>
+            <!-- calculator keys -->
+            <div class="kalkylator_nycklar">
+                <button class="nyckel_operatorer" data-action="add">+</button>
+                <button class="nyckel_operatorer" data-action="subtract">-</button>
+                <button class="nyckel_operatorer" data-action="multiply">&times;</button>
+                <button class="nyckel_operatorer" data-action="divide">&divide;</button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>0</button>
+                <button data-action="decimal">.</button>
+                <button data-action="clear">AC</button>
+                <button class="nyckel_likamed" data-action="calculate">=</button>
+            </div>
         </table>
     </div>
 </body>
