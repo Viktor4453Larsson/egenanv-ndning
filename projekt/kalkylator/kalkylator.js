@@ -1,8 +1,8 @@
 /* Här deklarerar vi de DOM värdena vi vill använda */
-const kalkylator = document.querySelector(".kalkylator");
-const nycklar = document.querySelector(".kalkylator_nycklar");
+const raknare = document.querySelector(".kalkylator");
+const nyckel = document.querySelector(".kalkylator_nycklar");
 
-nycklar.addEventListener('click', e => {
+nyckel.addEventListener('click', e => {
     if (e.target.matches('button')) {
         /* Gör något här */
     }
@@ -38,7 +38,7 @@ if (action === 'calculate') {
 
 const skarm = document.querySelector(".kalkylator_skarm");
 
-nycklar.addEventListener("click", e => {
+nyckel.addEventListener("click", e => {
     if (e.target.matches("button")) {
        const key = e.target
        const action = key.dataset.action
