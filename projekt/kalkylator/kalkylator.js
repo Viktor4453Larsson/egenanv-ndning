@@ -2,11 +2,11 @@
 const kalkylator = document.querySelector(".kalkylator");
 const nycklar = document.querySelector(".kalkylator_nycklar");
 
-nycklar.addEventListener("click", e => {
-    if (e.target.matches("button")) {
-         
+nycklar.addEventListener('click', e => {
+    if (e.target.matches('button')) {
+        /* Gör något här */
     }
-});
+})
 
 const key = e.target;
 const handling = key.dataset.action;
@@ -46,3 +46,15 @@ nycklar.addEventListener("click", e => {
        const displayedNum = display.textContent
     }
 })
+
+if (!action) {
+    if (displayedNum === "0") {
+        display.textContent = keyContent
+    } else {
+       display.textContent = displayedNum + keyContent 
+    }
+}
+
+if (action === "decimal") {
+    display.textContent = displayedNum + '.'
+}
