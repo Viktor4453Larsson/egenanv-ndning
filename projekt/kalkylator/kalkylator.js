@@ -1,9 +1,11 @@
 /* Här deklarerar vi de DOM värdena vi vill använda */
-const raknare = document.querySelector(".kalkylator");
-const nyckel = document.querySelector(".kalkylator_nycklar");
 
-nyckel.addEventListener('click', e => {
-    if (e.target.matches('button')) {
+const raknare = document.querySelector(".kalkylator");
+const nyckel = document.querySelector(".kalkylator_operatorer");
+
+
+ nyckel.addEventListener("click", e => {
+    if (e.target.matches("button")) {
         /* Gör något här */
     }
 })
@@ -57,4 +59,23 @@ if (!action) {
 
 if (action === "decimal") {
     display.textContent = displayedNum + '.'
+}
+
+const skärm = document.querySelector(".kalkylator_skarm");
+
+nyckel.addEventListener("click", e => {
+    if (e.target.matches("button")) {
+        const nyckel = e.target
+        const action = key.dataset.action
+        const keyContent = key.textContent
+        const displayedNum = display.textContent
+    }
+})
+
+if (!action) {
+    if (displayedNum === "0") {
+        display.textContent = keyContent
+    } else {
+        display.textContent = displayedNum + keyContent
+    }
 }
