@@ -4,8 +4,8 @@ const raknare = document.querySelector(".kalkylator");
 const nyckel = document.querySelector(".kalkylator_operatorer");
 
 
- nyckel.addEventListener("click", e => {
-    if (e.target.matches("button")) {
+ nyckel.addEventListener("click", event => {
+    if (event.target.matches("button")) {
         /* Gör något här */
     }
 })
