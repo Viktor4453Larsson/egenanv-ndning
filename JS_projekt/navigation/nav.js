@@ -1,15 +1,15 @@
-// classList - shows/gets all classes
-// contains - checks classList for specific class
-// add - add class
-// remove - remove class
-// toggle - toggles class
+
 
 const navSkifftande = document.querySelector(".navigera_runt");
-const lankar = document.querySelector(".navigera_runt");
+const links = document.querySelector(".links");
 
 navSkifftande.addEventListener("click", function () {
-   // console.log(lankar.classList);
-    //console.log(lankar.classList.contains("random"));
-    console.log(lankar.classList.contains("lankar"));
-
+    //Här kollar vi om klassen stämmer och fungerar
+    console.log(links.classList.contains("links"));
+   if (links.classList.contains("visa-lankarna")) {
+       links.classList.remove("visa-lankarna");
+   } 
+   else {
+       links.classList.add("visa-lankarna");
+   }
 });
